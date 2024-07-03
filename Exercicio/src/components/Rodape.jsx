@@ -2,18 +2,15 @@
 import "./Rodape.css";
 
 function Rodape() {
+    const Soulcode = "© 2015-2024 Soulcode. Todos os direitos reservados";
     const Instagram = "Instagram";
     const Linkedin = "Linkedin";
     const Contato = "Contato";
 
     return (
-        <nav>
-                <ul className="menu">
-		            <li><a href="#">{Instagram}</a></li>
-		            <li><a href="#">{Linkedin}</a></li>
-		            <li><a href="#">{Contato}</a></li>
-                </ul>
-            </nav>
+        <footer>
+            © 2015-2024 Soulcode. Todos os direitos reservados
+            </footer>
         
     );
 }

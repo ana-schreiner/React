@@ -2,10 +2,7 @@ import './Galeria.css';
 
 function CardProduto(props) {
     const valorDesconto = props.precoUnitario - props.precoUnitario * (props.desconto/100);
-
-    const handleComprarClick = () => {
-    };
-
+    
     return (
         <article className="card-produto">
             <img src={props.imagem} alt={props.nome} className="produto-imagem" />

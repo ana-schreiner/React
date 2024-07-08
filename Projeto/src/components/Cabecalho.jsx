@@ -2,7 +2,7 @@ import './Cabecalho.css';
 import imagem from '../assets/logo.png';
 
 function Cabecalho() {
-  const handleClickEntrar = () => {
+  const ClickEntrar = () => {
     window.alert('Erro: Você não possui permissão para acessar esta área.');
   };
 
@@ -18,7 +18,7 @@ function Cabecalho() {
           <a href="#">Início</a>
           <a href="#">Produtos</a>
           <a href="#">Contato</a>
-          <a href="#" onClick={handleClickEntrar}>Entrar</a>
+          <a href="#" onClick={ClickEntrar}>Entrar</a>
         </div>
       </div>
     </header>

@@ -1,4 +1,4 @@
-.galeria {
+.home {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -9,17 +9,17 @@
   padding: 8px;
   border: 1px solid grey;
   border-radius: 8px;
-  width: 300px;
+  width: 300px; /* Largura fixa para todos os cards */
   margin: 8px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .card-produto img {
-  max-width: 100%;
-  height: auto;
+  width: 100%; /* Garante que a imagem ocupe toda a largura do seu contêiner */
+  height: 200px; /* Altura fixa para todas as imagens */
+  object-fit: cover; /* Evita distorção da imagem */
   border-radius: 8px 8px 0 0;
 }
 
@@ -31,6 +31,7 @@
 
 .card-produto h4 {
   font-size: 2rem;
+  margin: 8px 0;
 }
 
 .grifado {
@@ -49,7 +50,7 @@
   padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
-  margin-top: auto;
+  margin-top: auto; /* Empurra o botão para a parte inferior do card */
 }
 
 .botao-comprar:hover {

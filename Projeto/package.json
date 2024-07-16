@@ -9,7 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "preact": "^10.22.0"
+    "bootstrap": "^5.3.3",
+    "firebase": "^10.12.3",
+    "preact": "^10.22.0",
+    "react-bootstrap": "^2.10.4",
+    "react-hook-form": "^7.52.1",
+    "react-router-dom": "^6.24.1"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.8.2",

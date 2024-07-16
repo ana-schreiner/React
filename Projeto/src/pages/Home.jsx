@@ -1,12 +1,13 @@
+import React from 'react';
+import './Home.css';
 import CardProduto from './CardProduto';
-import './Galeria.css';
 import imageCamera from '../assets/imageCamera.png';
 import imageTripe from '../assets/imageTripe.png';
 import imageLente from '../assets/imageLente.png';
 import imageFlash from '../assets/imageFlash.png';
 import imageRefletor from '../assets/imageRefletor.png';
 import imageIluminacao from '../assets/imageIluminacao.png';
-
+import Banner from './Banner';
 
 const produtos = [
   {
@@ -44,12 +45,13 @@ const produtos = [
     precoUnitario: 1140,
     desconto: 5,
     imagem: imageIluminacao
-  }
+  }
 ];
 
-function Galeria() {
+function Home() {
   return (
-    <div className="galeria">
+    <div className="home">
+      <Banner />
       {produtos.map((produto, index) => (
         <CardProduto 
           key={index}
@@ -59,7 +61,8 @@ function Galeria() {
           imagem={produto.imagem}
         />
       ))}
-    </div>
-  );
+    </div>
+  );
 }
-export default Galeria;
+
+export default Home;
